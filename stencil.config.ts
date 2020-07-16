@@ -2,9 +2,17 @@ import { Config } from '@stencil/core';
 
 // https://stenciljs.com/docs/config
 
+let globalScript: string = 'src/global/app.ts';
+
+const dev: boolean = process.argv && process.argv.indexOf('--dev') > -1;
+
+if (dev) {
+  globalScript = 'src/global/app-dev.ts';
+}
+
 export const config: Config = {
   globalStyle: 'src/global/app.css',
-  globalScript: 'src/global/app.ts',
+  globalScript: globalScript,
   taskQueue: 'async',
   outputTargets: [
     {

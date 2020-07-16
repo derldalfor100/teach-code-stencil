@@ -9,6 +9,6 @@ export default async () => {
    */
 
   setupConfig({
-    ROOT_URL: "http://davidflores.com"
+    ROOT_URL: "http://localhost:3333"
   });
 };

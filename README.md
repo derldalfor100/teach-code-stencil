@@ -39,3 +39,11 @@ To run the unit tests and watch for file changes during development, run:
 ```
 npm run test.watch
 ```
+
+### npm install @types/node --save-dev
+
+To recognize node variables
+
+### Environment variables
+
+For more information: https://dev.to/daviddalbusco/environment-variables-with-stenciljs-h6
