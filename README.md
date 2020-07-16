@@ -47,3 +47,7 @@ To recognize node variables
 ### Environment variables
 
 For more information: https://dev.to/daviddalbusco/environment-variables-with-stenciljs-h6
+
+### Automated Deploy Scripts `npm install gh-pages --save-dev`
+
+For more information: https://stackoverflow.com/questions/42469817/host-github-pages-from-dist-folder-in-master-branch
