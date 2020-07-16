@@ -11,7 +11,10 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
-    "deploy": "npm run buildProd && gh-pages -d dist"
+    "deploy": "npm run buildProd && npm run copy && npm run copyHtml && gh-pages -d dist",
+    "copy": "copyfiles -u 1 www/dist/** ./",
+    "copyHtml": "copyfiles index.html dist",
+    "upload": "gh-pages -d dist"
   },
   "devDependencies": {
     "@stencil/core": "^1.12.2",

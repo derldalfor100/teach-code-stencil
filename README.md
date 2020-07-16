@@ -51,3 +51,7 @@ For more information: https://dev.to/daviddalbusco/environment-variables-with-st
 ### Automated Deploy Scripts `npm install gh-pages --save-dev`
 
 For more information: https://stackoverflow.com/questions/42469817/host-github-pages-from-dist-folder-in-master-branch
+
+### npm install copyfiles -g
+
+For more information: https://www.npmjs.com/package/copyfiles

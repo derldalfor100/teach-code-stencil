@@ -19,7 +19,8 @@ export const config: Config = {
       type: 'www',
       // comment the following line to disable service workers in production
       serviceWorker: null,
-      baseUrl: 'https://derldalfor100.github.io/teach-code-vue/'
+      baseUrl: 'https://derldalfor100.github.io/dist/',
+      indexHtml: 'https://derldalfor100.github.io/dist/'
     }
   ]
 };
