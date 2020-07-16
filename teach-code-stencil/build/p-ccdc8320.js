@@ -1,0 +1,1 @@
+const n=async()=>{!function(){if(!window)return;const n=window,e=n.enviroment;if(!e||!e.config||"Object"===e.config.constructor.name)return n.enviroment=n.enviroment||{},n.enviroment.config=Object.assign(Object.assign({},n.enviroment.config),{ROOT_URL:"http://davidflores.com"}),n.enviroment.config;console.error("Deckenviroment config was already initialized")}()};export{n as g}
