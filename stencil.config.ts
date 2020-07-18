@@ -5,9 +5,9 @@ import { sass } from '@stencil/sass';
 
 let globalScript: string = 'src/global/app.ts';
 
-let baseUrl: string = 'https://derldalfor100.github.io/dist/';
+let baseUrl: string = '/teach-code-stencil';
 
-let indexHtml:string = 'https://derldalfor100.github.io/dist/';
+let indexHtml:string = '/teach-code-stencil';
 
 const dev: boolean = process.argv && process.argv.indexOf('--dev') > -1;
 

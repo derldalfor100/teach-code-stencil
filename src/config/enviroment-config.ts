@@ -1,5 +1,6 @@
 export interface EnvironmentConfig {
     ROOT_URL: string;
+    NAME: string;
 }
 
 export function setupConfig(config: EnvironmentConfig) {

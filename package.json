@@ -11,8 +11,10 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
-    "deploy": "npm run buildProd && npm run copy && npm run copyHtml && gh-pages -d dist",
-    "copy": "copyfiles -u 1 www/dist/** ./",
+    "deploy": "npm run trash && npm run buildProd && npm run copy && npm run rename && npm run copyHtml && gh-pages -d dist",
+    "trash": "trash dist",
+    "copy": "copyfiles -u 1 www/teach-code-stencil/** ./",
+    "rename": "node -e \"require('fs').rename('teach-code-stencil', 'dist', function(err) { if (err) console.log(err); console.log('File successfully renamed!') })\"",
     "copyHtml": "copyfiles index.html dist",
     "upload": "gh-pages -d dist"
   },
