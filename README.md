@@ -55,3 +55,7 @@ For more information: https://stackoverflow.com/questions/42469817/host-github-p
 ### npm install copyfiles -g
 
 For more information: https://www.npmjs.com/package/copyfiles
+
+### npm install @stencil/sass --save-dev
+
+Fore more information: https://www.npmjs.com/package/@stencil/sass

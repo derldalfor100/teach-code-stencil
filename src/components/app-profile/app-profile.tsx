@@ -3,7 +3,7 @@ import { MatchResults } from '@stencil/router';
 
 @Component({
   tag: 'app-profile',
-  styleUrl: 'app-profile.css',
+  styleUrl: 'app-profile.scss',
   shadow: true
 })
 export class AppProfile {
@@ -24,6 +24,7 @@ export class AppProfile {
             Hello! My name is {this.normalize(this.match.params.name)}. My name was passed in
             through a route param!
           </p>
+          <h1>Stencil App Starter</h1>
         </div>
       );
     }
