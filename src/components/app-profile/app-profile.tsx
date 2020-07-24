@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, getAssetPath } from '@stencil/core';
 import { MatchResults } from '@stencil/router';
 
 @Component({
@@ -25,6 +25,7 @@ export class AppProfile {
             through a route param!
           </p>
           <h1>Stencil App Starter</h1>
+          <img src={getAssetPath('../assets/images/view.jpg')} alt=""/>
         </div>
       );
     }

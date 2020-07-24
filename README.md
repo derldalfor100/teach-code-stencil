@@ -58,4 +58,12 @@ For more information: https://www.npmjs.com/package/copyfiles
 
 ### npm install @stencil/sass --save-dev
 
-Fore more information: https://www.npmjs.com/package/@stencil/sass
+For more information: https://www.npmjs.com/package/@stencil/sass
+
+### Local Assets Path
+
+For more information: https://stenciljs.com/docs/local-assets
+
+### "resolveJsonModule": true
+
+For more information: https://mariusschulz.com/blog/importing-json-modules-in-typescript

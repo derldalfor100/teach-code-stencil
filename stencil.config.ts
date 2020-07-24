@@ -41,6 +41,14 @@ export const config: Config = {
       indexHtml: indexHtml
     }
   ],
+  rollupPlugins: {
+    before: [
+
+    ],
+    after: [
+
+    ]
+  },
   plugins: [
     sass({
       injectGlobalPaths: [

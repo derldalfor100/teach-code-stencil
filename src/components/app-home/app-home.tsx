@@ -1,11 +1,15 @@
 import { Component, h } from '@stencil/core';
-
+import example from '../../assets/json/example.json';
 @Component({
   tag: 'app-home',
   styleUrl: 'app-home.scss',
   shadow: true
 })
 export class AppHome {
+
+  componentWillLoad() {
+    console.log('Component is about to be rendered', example);
+  }
 
   render() {
     return (
@@ -22,6 +26,8 @@ export class AppHome {
             Profile page
           </button>
         </stencil-route-link>
+
+        <p>{ example.data }</p>
       </div>
     );
   }
