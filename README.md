@@ -67,3 +67,7 @@ For more information: https://stenciljs.com/docs/local-assets
 ### "resolveJsonModule": true
 
 For more information: https://mariusschulz.com/blog/importing-json-modules-in-typescript
+
+### npm install xml2json-light
+
+For more information: https://www.npmjs.com/package/xml2json-light

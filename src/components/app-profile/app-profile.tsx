@@ -1,6 +1,7 @@
 import { Component, Prop, h, getAssetPath } from '@stencil/core';
 import { MatchResults } from '@stencil/router';
 import { FetchJson } from '../../services/fetchJson';
+import { FetchXml } from '../../services/fetchXml';
 
 @Component({
   tag: 'app-profile',
@@ -20,6 +21,8 @@ export class AppProfile {
   componentWillLoad() {
 
     this.fetchExample();
+
+    this.fetchXmlExample();
   }
 
   fetchExample() {
@@ -32,6 +35,22 @@ export class AppProfile {
   
       console.log('example:', exampleData);
 
+    }, 0);
+  }
+
+  fetchXmlExample() {
+    
+    setTimeout(async () => {
+      
+      const fetchXML = new FetchXml<{id: number, data: string}>();
+
+      const exampleXMLData = await fetchXML.getXml('https://derldalfor100.github.io/teach-code-stencil/assets/xml/example.xml');
+  
+      console.log('xml example:', exampleXMLData);
+
+      const exampleData = await fetchXML.get('https://derldalfor100.github.io/teach-code-stencil/assets/xml/example.xml');
+
+      console.log('xml object example:', exampleData); // don't know to recognize fields as number type
     }, 0);
   }
 
