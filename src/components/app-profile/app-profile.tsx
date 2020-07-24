@@ -31,7 +31,7 @@ export class AppProfile {
       
       const fetchJSON = new FetchJson<{id: number, data: string}>();
 
-      const exampleData = await fetchJSON.get('https://derldalfor100.github.io/teach-code-stencil/assets/json/example.json');
+      const exampleData = await fetchJSON.get(getAssetPath('../assets/json/example.json'));
   
       console.log('example:', exampleData);
 
@@ -44,11 +44,11 @@ export class AppProfile {
       
       const fetchXML = new FetchXml<{id: number, data: string}>();
 
-      const exampleXMLData = await fetchXML.getXml('https://derldalfor100.github.io/teach-code-stencil/assets/xml/example.xml');
+      const exampleXMLData = await fetchXML.getXml(getAssetPath('../assets/xml/example.xml'));
   
       console.log('xml example:', exampleXMLData);
 
-      const exampleData = await fetchXML.get('https://derldalfor100.github.io/teach-code-stencil/assets/xml/example.xml');
+      const exampleData = await fetchXML.get(getAssetPath('../assets/xml/example.xml'));
 
       console.log('xml object example:', exampleData); // don't know to recognize fields as number type
     }, 0);
