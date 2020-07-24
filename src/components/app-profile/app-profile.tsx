@@ -1,5 +1,6 @@
 import { Component, Prop, h, getAssetPath } from '@stencil/core';
 import { MatchResults } from '@stencil/router';
+import { FetchJson } from '../../services/fetchJson';
 
 @Component({
   tag: 'app-profile',
@@ -14,6 +15,24 @@ export class AppProfile {
       return name.substr(0, 1).toUpperCase() + name.substr(1).toLowerCase();
     }
     return '';
+  }
+
+  componentWillLoad() {
+
+    this.fetchExample();
+  }
+
+  fetchExample() {
+
+    setTimeout(async () => {
+      
+      const fetchJSON = new FetchJson<{id: number, data: string}>();
+
+      const exampleData = await fetchJSON.get('https://derldalfor100.github.io/teach-code-stencil/assets/json/example.json');
+  
+      console.log('example:', exampleData);
+
+    }, 0);
   }
 
   render() {
