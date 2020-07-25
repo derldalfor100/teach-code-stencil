@@ -71,3 +71,7 @@ For more information: https://mariusschulz.com/blog/importing-json-modules-in-ty
 ### npm install xml2json-light
 
 For more information: https://www.npmjs.com/package/xml2json-light
+
+### Stencil Router
+
+For more information: https://github.com/ionic-team/stencil-router/wiki

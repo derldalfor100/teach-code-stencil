@@ -32,9 +32,10 @@ export class AppRoot {
         </header>
 
         <main>
-          <stencil-router>
+          <stencil-router historyType={ 'hash' }>
             <stencil-route-switch scrollTopOffset={0}>
-              <stencil-route url={''} component='app-home' exact={true} />
+              <stencil-route url={'/home'} component='app-home' exact={true} />
+              <stencil-router-redirect url={'/home'} />
               <stencil-route url={ '/profile/:name' } component='app-profile' />
             </stencil-route-switch>
           </stencil-router>
