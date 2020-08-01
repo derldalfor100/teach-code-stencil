@@ -1,0 +1,1 @@
+System.register([],(function(e){"use strict";return{execute:function(){e("i",t);function t(){var e=navigator.userAgent||navigator.vendor;return"documentMode"in document||/Edge/.test(e)}}}}));

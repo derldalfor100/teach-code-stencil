@@ -8,6 +8,9 @@ import example from '../../assets/json/example.json';
 export class AppHome {
 
   componentWillLoad() {
+
+    sessionStorage.setItem('path:', 'home');
+
     console.log('Component is about to be rendered', example);
   }
 
@@ -22,7 +25,7 @@ export class AppHome {
         </p>
 
         <stencil-route-link url='/profile/stencil'>
-          <button>
+          <button class="btn btn-primary">
             Profile page
           </button>
         </stencil-route-link>

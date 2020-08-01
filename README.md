@@ -75,3 +75,15 @@ For more information: https://www.npmjs.com/package/xml2json-light
 ### Stencil Router
 
 For more information: https://github.com/ionic-team/stencil-router/wiki
+
+### Bootstrap `npm i bootstrap`
+
+For more information: https://www.npmjs.com/package/bootstrap
+
+### Duet Components
+
+For more information: https://www.duetds.com/using-components/#installation
+
+### `npm install ncp --save-dev`
+
+For more information: https://www.npmjs.com/package/ncp

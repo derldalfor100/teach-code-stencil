@@ -17,17 +17,21 @@
     "copy": "copyfiles -u 1 www/teach-code-stencil/** ./",
     "rename": "node -e \"require('fs').rename('teach-code-stencil', 'dist', function(err) { if (err) console.log(err); console.log('File successfully renamed!') })\"",
     "copyHtml": "copyfiles index.html dist",
-    "upload": "gh-pages -d dist"
+    "upload": "gh-pages -d dist",
+    "copy:components": "ncp node_modules/@duetds/components/lib/duet src/assets/scripts/duet"
   },
   "devDependencies": {
     "@stencil/core": "^1.12.2",
     "@stencil/router": "^1.0.1",
     "@stencil/sass": "^1.3.2",
     "@types/node": "^14.0.23",
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.1.0",
+    "ncp": "^2.0.0"
   },
   "license": "MIT",
   "dependencies": {
+    "@duetds/components": "^4.7.1",
+    "bootstrap": "^4.5.0",
     "xml2json-light": "^1.0.6"
   }
 }
