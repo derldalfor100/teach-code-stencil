@@ -1,0 +1,1 @@
+const t=t=>{if(Array.isArray(t)||"[object Object]"===Object.prototype.toString.call(t))return t;if("string"==typeof t)try{return JSON.parse(t)}catch(r){console.error(r)}return!1};export{t as p}

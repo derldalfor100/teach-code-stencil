@@ -1,0 +1,1 @@
+const t=t=>{"default"!==t.theme&&document.documentElement.classList.contains("duet-theme-turva")&&(t.theme="turva")};export{t as i}

@@ -1,0 +1,1 @@
+System.register([],(function(t){"use strict";return{execute:function(){var e=t("i",(function(t){if(t.theme!=="default"&&document.documentElement.classList.contains("duet-theme-turva")){t.theme="turva"}}))}}}));
