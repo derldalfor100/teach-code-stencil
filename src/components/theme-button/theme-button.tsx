@@ -4,7 +4,7 @@ import Tunnel from '../../tunnels/theme/theme-context';
 @Component({
   tag: 'theme-button',
   styleUrl: 'theme-button.scss',
-  shadow: false
+  shadow: true
 })
 export class ThemeButton implements ComponentInterface {
 
