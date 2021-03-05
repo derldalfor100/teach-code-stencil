@@ -2,6 +2,7 @@ import { Component, Prop, h, getAssetPath } from '@stencil/core';
 import { MatchResults, RouterHistory } from '@stencil/router';
 import { FetchJson } from '../../services/fetchJson';
 import { FetchXml } from '../../services/fetchXml';
+import Tunnel, { defaultThemeContext } from "../../tunnels/theme/theme-context";
 
 @Component({
   tag: 'app-profile',
@@ -78,6 +79,9 @@ export class AppProfile {
           <div class="d-flex justify-content-center p-4">
             <duet-button onClick={() => this.history.goBack()} variation="primary">Go Back</duet-button>
           </div>
+          <Tunnel.Provider state={defaultThemeContext}>
+            <theme-button></theme-button>
+          </Tunnel.Provider>
         </div>
       );
     }

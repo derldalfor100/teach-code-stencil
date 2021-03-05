@@ -31,6 +31,7 @@
   "license": "MIT",
   "dependencies": {
     "@duetds/components": "^4.7.1",
+    "@stencil/state-tunnel": "^1.0.1",
     "bootstrap": "^4.5.0",
     "xml2json-light": "^1.0.6"
   }

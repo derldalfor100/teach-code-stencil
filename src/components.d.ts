@@ -15,6 +15,10 @@ export namespace Components {
     }
     interface AppRoot {
     }
+    interface ThemeButton {
+        "themeName": string;
+        "toggleTheme": () => void;
+    }
 }
 declare global {
     interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
@@ -35,10 +39,17 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
+    interface HTMLThemeButtonElement extends Components.ThemeButton, HTMLStencilElement {
+    }
+    var HTMLThemeButtonElement: {
+        prototype: HTMLThemeButtonElement;
+        new (): HTMLThemeButtonElement;
+    };
     interface HTMLElementTagNameMap {
         "app-home": HTMLAppHomeElement;
         "app-profile": HTMLAppProfileElement;
         "app-root": HTMLAppRootElement;
+        "theme-button": HTMLThemeButtonElement;
     }
 }
 declare namespace LocalJSX {
@@ -50,10 +61,15 @@ declare namespace LocalJSX {
     }
     interface AppRoot {
     }
+    interface ThemeButton {
+        "themeName"?: string;
+        "toggleTheme"?: () => void;
+    }
     interface IntrinsicElements {
         "app-home": AppHome;
         "app-profile": AppProfile;
         "app-root": AppRoot;
+        "theme-button": ThemeButton;
     }
 }
 export { LocalJSX as JSX };
@@ -63,6 +79,7 @@ declare module "@stencil/core" {
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "theme-button": LocalJSX.ThemeButton & JSXBase.HTMLAttributes<HTMLThemeButtonElement>;
         }
     }
 }
