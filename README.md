@@ -87,3 +87,7 @@ For more information: https://www.duetds.com/using-components/#installation
 ### `npm install ncp --save-dev`
 
 For more information: https://www.npmjs.com/package/ncp
+
+### `npm i @stencil/state-tunnel`
+
+For more information: https://github.com/ionic-team/stencil-state-tunnel
